@@ -1,7 +1,7 @@
 {
-    "name": "insight/insight",
-    "description": "Wordpress Builder Complex Application.",
-    "keywords": ["framework", "wordpress"],
+    "name": "wp_builder_app/wp_builder_app",
+    "description": "The Wordpress Plugin Framework for Builder Complex Application.",
+    "keywords": ["framework", "wordpress", "App", "Plugin"],
     "license": "MIT",
     "type": "project",
     "require": {
