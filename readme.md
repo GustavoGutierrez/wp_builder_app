@@ -1,9 +1,15 @@
 #WP BUILDER APP
 
-Insight es un término utilizado en Psicología proveniente del inglés que se puede traducir al español como "visión interna" o más genéricamente "percepción" o "entendimiento".
+El plugin **Builder of complex applications** permite realizar aplicaciones complejas, completamente modulares, implementando para ello los nuevos paradigmas de desarrollo, usando espacios de nombre, abstracciones, inyeccion de dependencias, traits, **Composer** como gestor de librerias y mucho más. Ademas de facilitar el desarrollo frontend utilizando para ello PostCss y Typescript para el estilizado y scripting; permitiendo reutilizar funcionalidades complejas entre sus diferentes partes como plugins independientes, widgets, vistas, lenguages; si asi se quiere. Una de las funcionalidades principales de este plugin es automatizar el guardado de los post types, taxonomias, etc; con su funciones heredadas del nucleo  para la auto getión de las funcionalidades desarrolladas con este.
 
-https://developer.wordpress.org/reference/classes/wp_rest_response/
-https://developer.wordpress.org/reference/classes/wp_rest_request/
-https://developer.wordpress.org/reference/classes/wp_rest_server/
+##Instalación de el plugin
+En su carpeta de plugin que usalmente se encuentra en:
 
+> wp_content/plugins
+
+##Desde el terminal ejecutar:
+
+>composer create-project --dev wp_builder_app/wp_builder_app wp_builder_app 0.0.1-beta
+
+ 
 
