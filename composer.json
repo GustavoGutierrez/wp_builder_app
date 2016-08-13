@@ -14,8 +14,11 @@
             "App\\": "app/"
         }
     },
-    "config": {
-        "preferred-install": "dist"
-    },
-    "minimum-stability":"dev"
+    "minimum-stability":"dev",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/GustavoGutierrez/wp_builder_app"
+        }
+    ]
 }
