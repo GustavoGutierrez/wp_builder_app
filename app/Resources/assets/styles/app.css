@@ -1,0 +1,17 @@
+$blue: #056ef0;
+$column: 200px;
+
+@import "modules/foo";
+
+.app{
+     display: flex
+}
+
+
+.menu {
+    width: calc(4 * $column);
+}
+.menu_link {
+    background: $blue;
+    width: $column;
+}

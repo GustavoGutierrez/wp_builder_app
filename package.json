@@ -1,0 +1,30 @@
+{
+  "name": "wp_builder_app",
+  "version": "1.0.0",
+  "description": "Builder Complex Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/gustavogutierrez/pro-profile.git"
+  },
+  "keywords": [
+    "Builder",
+    "Complex",
+    "App"
+  ],
+  "author": "Gustavo Gutierrez Mercado",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/gustavogutierrez/pro-profile#readme",
+  "devDependencies": {
+    "autoprefixer": "^6.3.7",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^6.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.13.6",
+    "postcss-partial-import": "^2.0.0",
+    "precss": "^1.4.0"
+  }
+}

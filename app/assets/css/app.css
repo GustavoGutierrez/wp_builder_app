@@ -1,0 +1,20 @@
+.foo{
+     background: #000
+}
+
+.app{
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex
+}
+
+
+.menu {
+    width: calc(4 * 200px);
+}
+.menu_link {
+    background: #056ef0;
+    width: 200px;
+}
+
+/*# sourceMappingURL=app.css.map */

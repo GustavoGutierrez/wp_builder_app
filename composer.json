@@ -1,0 +1,21 @@
+{
+    "name": "insight/insight",
+    "description": "Wordpress Builder Complex Application.",
+    "keywords": ["framework", "wordpress"],
+    "license": "MIT",
+    "type": "project",
+    "require": {
+    	"php": ">=5.5.9",
+        "wp_builder_app/insight": "0.0.1-beta"
+    },
+     "autoload": {
+        "classmap": [],
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability":"dev"
+}
