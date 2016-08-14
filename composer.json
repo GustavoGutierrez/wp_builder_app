@@ -6,7 +6,7 @@
     "type": "project",
     "require": {
     	"php": ">=5.5.9",
-        "wp_builder_app/insight": "0.0.1-beta"
+        "wp_builder_app/insight": "dev-master"
     },
      "autoload": {
         "classmap": [],
