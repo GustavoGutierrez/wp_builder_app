@@ -16,6 +16,7 @@ use App\Plugins\Plugin;
 use Insight\Traits\HelperCustomPostType;
 use Insight\Traits\HelperCustomTaxonomy;
 use PostType\PostType\Builder as PostType;
+use PostType\Taxonomy\Builder as Taxonomy;
 
 class Dummies extends Plugin {
 
@@ -23,9 +24,8 @@ class Dummies extends Plugin {
 	use HelperCustomTaxonomy;
 
 	public function __construct() {
-		//$this->embedJs('app.js', array('post_type'=>'Dummies', 'id'=>'app-script-Dummy'), true);
-		$this->embedCss('app.css', array('post_type' => 'Dummies', 'id' => 'app-style-Dummy'), true);
-		//dump($this->app_name);
+		$this->embedJs('app.js', array('post_type' => 'dummy', 'id' => 'app-script-dummy'), true);
+		$this->embedCss('app.css', array('post_type' => 'dummy', 'id' => 'app-style-dummy'), true);
 	}
 
 	/**
@@ -48,20 +48,8 @@ class Dummies extends Plugin {
 	 * create taxonomy for the post type of the plugin
 	 */
 	public function register_tx() {
-
-		$this->create_taxonomy('dummy-type', // taxonomy name
-			__('Dummy Type', 'proprofile'), // singular
-			__('Dummy Types', 'proprofile'), // plural
-			array('show_ui' => true), // argumentos
-			array('dummy') // post types
-		);
-
-		$this->create_taxonomy('dummy-difficulty', // taxonomy name
-			__('Dummy Difficulty', 'proprofile'), // singular
-			__('Difficulties Dummies', 'proprofile'), // plural
-			array('show_ui' => true), // argumentos
-			array('dummy') // post types
-		);
+		Taxonomy::make(array('dummy'), __('Dummy Type', 'proprofile'), __('Dummies Types', 'proprofile'));
+		Taxonomy::make(array('dummy'), __('Dummy Difficulty', 'proprofile'), __('Difficulties Dummies', 'proprofile'));
 	}
 
 	/**
@@ -69,10 +57,9 @@ class Dummies extends Plugin {
 	 * HelperCustomPostType de add y save del metabox
 	 */
 	public function _add_metaboxes() {
-		add_meta_box("recommended_links_metabox", __("Recommended Links", "proprofile"), array(
-			$this,
-			'render_recommended_links_metabox',
-		), 'dummy');
+		add_meta_box("recommended_links_metabox",
+			__("Recommended Links", "proprofile"),
+			array($this, 'render_recommended_links_metabox'), 'dummy');
 	}
 
 	/**
