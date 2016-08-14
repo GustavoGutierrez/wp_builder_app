@@ -15,6 +15,7 @@ namespace App\Plugins;
 use App\Plugins\Plugin;
 use Insight\Traits\HelperCustomPostType;
 use Insight\Traits\HelperCustomTaxonomy;
+use PostType\PostType\Builder as PostType;
 
 class Dummies extends Plugin {
 
@@ -32,7 +33,7 @@ class Dummies extends Plugin {
 	 */
 	public function register_cpt() {
 
-		$this->create_post_type('dummies', __('Dummy', 'proprofile'), __('Dummies', 'proprofile'), __('Dummies Administrator', 'proprofile'), array(
+		PostType::make(__('Dummy', 'proprofile'), __('Dummies', 'proprofile'), array(
 			'supports' => array(
 				'title',
 				'editor',
@@ -52,14 +53,14 @@ class Dummies extends Plugin {
 			__('Dummy Type', 'proprofile'), // singular
 			__('Dummy Types', 'proprofile'), // plural
 			array('show_ui' => true), // argumentos
-			array('dummies') // post types
+			array('dummy') // post types
 		);
 
 		$this->create_taxonomy('dummy-difficulty', // taxonomy name
 			__('Dummy Difficulty', 'proprofile'), // singular
 			__('Difficulties Dummies', 'proprofile'), // plural
 			array('show_ui' => true), // argumentos
-			array('dummies') // post types
+			array('dummy') // post types
 		);
 	}
 
@@ -71,7 +72,7 @@ class Dummies extends Plugin {
 		add_meta_box("recommended_links_metabox", __("Recommended Links", "proprofile"), array(
 			$this,
 			'render_recommended_links_metabox',
-		), 'dummies');
+		), 'dummy');
 	}
 
 	/**

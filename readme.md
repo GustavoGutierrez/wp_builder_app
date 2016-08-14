@@ -13,7 +13,7 @@ En su carpeta de plugin que usalmente se encuentra en:
 
 ##Desde el terminal ejecutar:
 
->composer create-project wp_builder_app/wp_builder_app wp_builder_app 0.0.2-beta
+>composer create-project wp_builder_app/wp_builder_app wp_builder_app dev-master
 
  
 
