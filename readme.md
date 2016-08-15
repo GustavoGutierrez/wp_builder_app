@@ -15,5 +15,10 @@ En su carpeta de plugin que usalmente se encuentra en:
 
 >composer create-project wp_builder_app/wp_builder_app wp_builder_app dev-master
 
+##Trello
+Ayuda a mejorar el Plugin aportando ideas que sean necesarias implementar:
+
+[https://trello.com/b/KZ6Jt7Jn/wp-builder-app](https://trello.com/b/KZ6Jt7Jn/wp-builder-app)
+
  
 
