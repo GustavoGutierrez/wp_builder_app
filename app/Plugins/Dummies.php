@@ -13,15 +13,10 @@ Domain Path: /languages
 namespace App\Plugins;
 
 use App\Plugins\Plugin;
-use Insight\Traits\HelperCustomPostType;
-use Insight\Traits\HelperCustomTaxonomy;
 use PostType\PostType\Builder as PostType;
 use PostType\Taxonomy\Builder as Taxonomy;
 
 class Dummies extends Plugin {
-
-	use HelperCustomPostType;
-	use HelperCustomTaxonomy;
 
 	public function __construct() {
 		$this->embedJs('app.js', array('post_type' => 'dummy', 'id' => 'app-script-dummy'), true);
@@ -29,45 +24,39 @@ class Dummies extends Plugin {
 	}
 
 	/**
-	 * create post type for plugin
+	 * Registra todos PostTypes del plugin
 	 */
-	public function register_cpt() {
-
-		PostType::make(__('Dummy', 'proprofile'), __('Dummies', 'proprofile'), array(
-			'supports' => array(
-				'title',
-				'editor',
-				'thumbnail',
-			),
-			'menu_icon' => 'dashicons-portfolio',
-		));
-
+	public function action_posttypes_init_10() {
+		PostType::make(__('Dummy', 'proprofile'),
+			__('Dummies', 'proprofile'),
+			array(
+				'supports' => array(
+					'title',
+					'editor',
+					'thumbnail',
+				),
+				'menu_icon' => 'dashicons-portfolio',
+			));
 	}
 
 	/**
-	 * create taxonomy for the post type of the plugin
+	 * Registra todas las taxonomias del plugin
 	 */
-	public function register_tx() {
-		Taxonomy::make(array('dummy'), __('Dummy Type', 'proprofile'), __('Dummies Types', 'proprofile'));
-		Taxonomy::make(array('dummy'), __('Dummy Difficulty', 'proprofile'), __('Difficulties Dummies', 'proprofile'));
+	public function action_taxonomies_init_11() {
+
+		Taxonomy::make(array('dummy'),
+			__('Dummy Type', 'proprofile'),
+			__('Dummies Types', 'proprofile'));
+
+		Taxonomy::make(array('dummy'),
+			__('Dummy Difficulty', 'proprofile'),
+			__('Difficulties Dummies', 'proprofile'));
 	}
 
 	/**
-	 * Si se define esta funcion se inicializan las acciones del
-	 * HelperCustomPostType de add y save del metabox
+	 * Crea el metabox recommendedLinks para los posttypes dummy y otroTest con prioridad high
 	 */
-	public function _add_metaboxes() {
-		add_meta_box("recommended_links_metabox",
-			__("Recommended Links", "proprofile"),
-			array($this, 'render_recommended_links_metabox'), 'dummy');
-	}
-
-	/**
-	 * Render metabox
-	 * @return [type] [description]
-	 */
-	public function render_recommended_links_metabox() {
-
+	public function metabox_recommendedLinks_dummy_otroTest_high() {
 		$Dummies = array(
 			array(
 				'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
