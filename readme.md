@@ -15,6 +15,10 @@ En su carpeta de plugin que usalmente se encuentra en:
 
 >composer create-project wp_builder_app/wp_builder_app wp_builder_app dev-master
 
+##Documentación
+
+Obten más información desde la [documentación](https://github.com/GustavoGutierrez/wp_builder_app_doc) oficial del plugin y te invitamos a que ayudes a mejorar y traducir nuetra documentación para que todos podamos disfrutar del desarrollo ágil que nos ofrece esta gran herramienta.
+
 ##Trello
 Ayuda a mejorar el Plugin aportando ideas que sean necesarias implementar:
 
