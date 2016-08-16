@@ -69,7 +69,7 @@ class Dummies extends Plugin {
 		echo view('dummies')
 			->with('dummies', $Dummies)
 			->with('title', 'Dummies')
-			->with('url', 'http://lorempixel.com/1000/200/');
+			->with('image', 'http://lorempixel.com/1200/400/');
 	}
 
 }

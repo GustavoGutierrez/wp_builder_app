@@ -1,0 +1,273 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: App\n"
+"POT-Creation-Date: 2016-08-15 20:20-0500\n"
+"PO-Revision-Date: 2016-08-15 20:21-0500\n"
+"Last-Translator: Gustavo <gustavogutierrezmercado@gmail.com>\n"
+"Language-Team: WP BUILDER APP <ggutierrez@enigmind.com>\n"
+"Language: es_ES\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.7.1\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../Plugins/Dummies.php:30
+msgid "Dummy"
+msgstr "Tonto"
+
+#: ../Plugins/Dummies.php:31
+msgid "Dummies"
+msgstr "Tontos"
+
+#: ../Plugins/Dummies.php:48
+msgid "Dummy Type"
+msgstr "Tipo de tonto"
+
+#: ../Plugins/Dummies.php:49
+msgid "Dummies Types"
+msgstr "Tipos de tontos"
+
+#: ../Plugins/Dummies.php:52
+msgid "Dummy Difficulty"
+msgstr "Dificultad de tonto"
+
+#: ../Plugins/Dummies.php:53
+msgid "Difficulties Dummies"
+msgstr "Dificultades de tontos"
+
+#~ msgid "All"
+#~ msgstr "Todos"
+
+#~ msgid "Parent"
+#~ msgstr "Padre"
+
+#~ msgid "New"
+#~ msgstr "Nuevo"
+
+#~ msgid "Add New"
+#~ msgstr "Añadir Nuevo"
+
+#~ msgid "Edit"
+#~ msgstr "Editar"
+
+#~ msgid "Update"
+#~ msgstr "Actualizar"
+
+#~ msgid "View"
+#~ msgstr "Ver"
+
+#~ msgid "Separate"
+#~ msgstr "Separar"
+
+#~ msgid "with commas"
+#~ msgstr "con comas"
+
+#~ msgid "Add or remove"
+#~ msgstr "Agregar o eliminar"
+
+#~ msgid "Choose from the most used"
+#~ msgstr "Seleccionar de el mas usado"
+
+#~ msgid "Search"
+#~ msgstr "Buscar"
+
+#~ msgid "Not Found"
+#~ msgstr "No encontrado"
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "list"
+#~ msgstr "lista"
+
+#~ msgid "list navigation"
+#~ msgstr "lista de navegación"
+
+#~ msgid "archive"
+#~ msgstr "archivo"
+
+#~ msgid "Add new"
+#~ msgstr "Agregar Nuevo"
+
+#~ msgid "Not found"
+#~ msgstr "No encontrado"
+
+#~ msgid "Not found in Trash"
+#~ msgstr "Nada en la papelera"
+
+#~ msgid "Featured Image"
+#~ msgstr "Imagen Destacada"
+
+#~ msgid "Set featured image"
+#~ msgstr "Agregar imagen destacada"
+
+#~ msgid "Remove featured image"
+#~ msgstr "Eliminar imagen destacada"
+
+#~ msgid "Use as featured image"
+#~ msgstr "Usar como imagen destacada"
+
+#~ msgid "Insert into"
+#~ msgstr "Insertar"
+
+#~ msgid "Uploaded to this"
+#~ msgstr "Subiendo aquí"
+
+#~ msgid "Filter "
+#~ msgstr "Filtar"
+
+#~ msgid "Novelty"
+#~ msgstr "Novedades"
+
+#~ msgid "We have no found any notification"
+#~ msgstr "No hemos encontrado ninguna notificación"
+
+#~ msgid "Novelty Category"
+#~ msgstr "Categoría de novedades"
+
+#~ msgid "Image"
+#~ msgstr "Imagen"
+
+#~ msgid "Upload/Add image"
+#~ msgstr "Subir/Agregar Imagen"
+
+#~ msgid "Image Icon"
+#~ msgstr "Imagen de icono"
+
+#~ msgid "Upload/Add image icon"
+#~ msgstr "Subir/Agregar Imagen de icono"
+
+#~ msgid "File icon max size 655px - 325px, format image"
+#~ msgstr "Archivo de icono máximo dimensión: 655px - 325px, formato imagen"
+
+#~ msgid "Remove image"
+#~ msgstr "Eliminar Novedad"
+
+#~ msgid "File icon max size 50px - 50px, format image"
+#~ msgstr "Archivo de icono máximo dimensión: 50px - 50px, formato imagen"
+
+#~ msgid "Parent Novelty:"
+#~ msgstr "Novedad Padre"
+
+#~ msgid "All Novelty"
+#~ msgstr "Todas las novedades"
+
+#~ msgid "View Novelty"
+#~ msgstr "Ver novedad"
+
+#~ msgid "Add New Novelty"
+#~ msgstr "Añadir Nueva Noevadad"
+
+#~ msgid "Edit Novelty"
+#~ msgstr "Editar novedad"
+
+#~ msgid "Update Novelty"
+#~ msgstr "Actualizar Novedad"
+
+#~ msgid "Search Novelty"
+#~ msgstr "Buscar Novedad"
+
+#~ msgid "Novelty con enlaces aparecen en el footer del home "
+#~ msgstr "Novedades con enlaces aparecen en el footer del home "
+
+#~ msgid "Novelty updated. <a href=\"%s\">View Novelty</a>"
+#~ msgstr "Novedad actualizada. <a href=\"%s\">Ver novedad</a>"
+
+#~ msgid "Custom field updated."
+#~ msgstr "Campo actualizado"
+
+#~ msgid "Custom field deleted."
+#~ msgstr "Campo borrado"
+
+#~ msgid "Novelty updated."
+#~ msgstr "Novedad Actualizada"
+
+#~ msgid "Novelty restored to revision from %s"
+#~ msgstr "Novedad restaurada de la revisión %s"
+
+#~ msgid "Novelty published. <a href=\"%s\">Novelty Story</a>"
+#~ msgstr "Novedad Publicada. <a href=\"%s\">Novedad </a>"
+
+#~ msgid "Novelty Saved."
+#~ msgstr "Novedad guardada"
+
+#~ msgid ""
+#~ "Novelty submitted. <a target=\"_blank\" href=\"%s\">Preview Novelty</a>"
+#~ msgstr "Noevadad enviado. <a target=\"_blank\" href=\"%s\">Ver novedad</a>"
+
+#~ msgid ""
+#~ "Novelty scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+#~ "\"%2$s\">Preview Novelty</a>"
+#~ msgstr ""
+#~ "Novedad scheduled for: <strong>%1$s</strong>. <a target=\"_blank\" href="
+#~ "\"%2$s\">Previsualizar novedad</a>"
+
+#~ msgid "M j, Y @ G:i"
+#~ msgstr "M j, Y @ G:i"
+
+#~ msgid ""
+#~ "Novelty draft updated. <a target=\"_blank\" href=\"%s\">Preview Novelty</"
+#~ "a>"
+#~ msgstr "Borrador actualizado. <a target=\"_blank\" href=\"%s\">Novedad</a>"
+
+#~ msgid "Comentar"
+#~ msgstr "Comentar"
+
+#~ msgid " comments"
+#~ msgstr " personas han comentado"
+
+#~ msgid "Write your comment here"
+#~ msgstr "Escriba aquí su comentario"
+
+#~ msgid "Post"
+#~ msgstr "Publicar"
+
+#~ msgid "Publisher"
+#~ msgstr "Publicar"
+
+#~ msgid " personas han comentado"
+#~ msgstr " personas han comentado"
+
+#~ msgid "Videos"
+#~ msgstr "Videos"
+
+#~ msgid "Video"
+#~ msgstr "Video"
+
+#~ msgid "All Videos"
+#~ msgstr "Todos los Videos"
+
+#~ msgid "View Video"
+#~ msgstr "Ver Video"
+
+#~ msgid "Edit Video"
+#~ msgstr "Editar Video"
+
+#~ msgid "Link video"
+#~ msgstr "Enlace del video"
+
+#~ msgid "File video"
+#~ msgstr "Archivo del video"
+
+#~ msgid "File Select and Upload"
+#~ msgstr "Seleccione o suba un archivo"
+
+#~ msgid "Link video youtube, example:"
+#~ msgstr "Enlace de video de Youtube, ejemplo:"
+
+#~ msgid "File Video *.mp4"
+#~ msgstr "Archivo del Video formato .mp4"
+
+#~ msgid "Video title can't be empty"
+#~ msgstr "El títlo del Video no puede estar vacío."
+
+#~ msgid "Video creation failed.<br/>"
+#~ msgstr "Falló la creación del Video."

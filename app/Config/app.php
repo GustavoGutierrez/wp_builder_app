@@ -23,4 +23,6 @@ return array(
 
 	'timezone' => 'UTC',
 
+	'textdomain' => 'wba', //Language text domain
+
 );
