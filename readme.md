@@ -1,7 +1,7 @@
 #WP BUILDER APP
 [![DUB](https://img.shields.io/badge/license-MIT-3DA639.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 ![Plugin](https://img.shields.io/badge/plugin-Wordpress-00749A.svg?style=flat-square)
-![Version](https://img.shields.io/badge/version-0.0.1-FB8677.svg?style=flat-square)
+![Version](https://img.shields.io/badge/version-0.0.1%20RC1-FB8677.svg?style=flat-square)
 
 ![insight](https://github.com/GustavoGutierrez/insight/blob/master/framework/Images/insight.png)
 
