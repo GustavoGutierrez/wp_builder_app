@@ -17,10 +17,52 @@ use PostType\PostType\Builder as PostType;
 use PostType\Taxonomy\Builder as Taxonomy;
 
 class Dummies extends Plugin {
-
+	/**
+	 * Dummies constructor.
+	 */
 	public function __construct() {
 		$this->embedJs('app.js', array('post_type' => 'dummy', 'id' => 'app-script-dummy'), true);
 		$this->embedCss('app.css', array('post_type' => 'dummy', 'id' => 'app-style-dummy'), true);
+	}
+
+	/**
+	 * Registrar los metaboxes para el post_type dummy
+	 */
+	public function metabox_dummy() {
+		$prefix = 'yourprefix_demo_';
+		$cmb_demo = new_cmb2_box(array(
+			'id' => $prefix . 'metabox',
+			'title' => __('Test Metabox', 'cmb2'),
+			'object_types' => array('dummy'), // Post type
+			'priority' => 'high'
+		));
+
+		$cmb_demo->add_field(array(
+			'name' => __('Test Text', 'cmb2'),
+			'desc' => __('field description (optional)', 'cmb2'),
+			'id' => $prefix . 'text',
+			'type' => 'text',
+			'show_on_cb' => 'yourprefix_hide_if_no_cats', // function should return a bool value
+		));
+
+		$cmb_demo->add_field(array(
+			'name' => __('Test Text Small', 'cmb2'),
+			'desc' => __('field description (optional)', 'cmb2'),
+			'id' => $prefix . 'textsmall',
+			'type' => 'text_small',
+		));
+		$cmb_demo->add_field(array(
+			'name' => __('Test Text Medium', 'cmb2'),
+			'desc' => __('field description (optional)', 'cmb2'),
+			'id' => $prefix . 'textmedium',
+			'type' => 'text_medium'
+		));
+		$cmb_demo->add_field(array(
+			'name' => __('Custom Rendered Field', 'cmb2'),
+			'desc' => __('field description (optional)', 'cmb2'),
+			'id' => $prefix . 'render_row_cb',
+			'type' => 'text'
+		));
 	}
 
 	/**
@@ -43,7 +85,6 @@ class Dummies extends Plugin {
 	 * Registra todas las taxonomias del plugin
 	 */
 	public function action_taxonomies_init_11() {
-
 		Taxonomy::make(array('dummy'),
 			__('Dummy Type', 'proprofile'),
 			__('Dummies Types', 'proprofile'));
@@ -52,24 +93,4 @@ class Dummies extends Plugin {
 			__('Dummy Difficulty', 'proprofile'),
 			__('Difficulties Dummies', 'proprofile'));
 	}
-
-	/**
-	 * Crea el metabox recommendedLinks para los posttypes dummy y otroTest con prioridad high
-	 */
-	public function metabox_recommendedLinks_dummy_otroTest_high() {
-		$Dummies = array(
-			array(
-				'text' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-			),
-			array(
-				'text' => 'Cras placerat condimentum dui, ac dapibus nibh tincidunt in.',
-			),
-		);
-
-		echo view('dummies')
-			->with('dummies', $Dummies)
-			->with('title', 'Dummies')
-			->with('image', 'http://lorempixel.com/1200/400/');
-	}
-
 }

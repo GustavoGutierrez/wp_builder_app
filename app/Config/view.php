@@ -1,9 +1,8 @@
 <?php
-global $app;
 /**
- * CONFIGURACION PARA EL RENDERIZADO DE LAS VISTAS USANDO MUSTRACHE ENGINE
+ * CONFIGURACION PARA EL RENDERIZAR DE LAS VISTAS USANDO MUSTRACHE ENGINE
  */
-return array(
+return [
 	/**
 	 * RUTA ABSOLUTA HACIA LA CARPETA DE RENDERIZADO DE LAS VISTAS
 	 */
@@ -25,4 +24,4 @@ return array(
 
 	'extension' => '.html',
 
-);
+];

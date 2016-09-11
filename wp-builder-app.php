@@ -9,22 +9,15 @@ Author URI: http://gustavogutierrez.co
 License: GPLv2 or later
 Text Domain: insight
 Domain Path: /vendor/wp_builder_app/insight/src/Languages
- */
-
+*/
 define('DS', DIRECTORY_SEPARATOR);
 define('BASE_PATH', dirname(__FILE__) . DS);
 
 require __DIR__ . '/vendor/autoload.php';
 
 try {
-
 	$app = new Insight\Foundation\Application(BASE_PATH);
 	$app->boot();
-
-	//dump(config('app.env'));
-	//dump(env('APP_KEY'));
-	//exit();
-
 } catch (Dotenv\Exception\InvalidFileException $e) {
 	dump($e->getMessage());
 } catch (Exception $e) {
